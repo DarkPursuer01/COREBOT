@@ -205,3 +205,63 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+########################################
+# CoreBOT (project-specific)
+########################################
+
+# Backtest / runs outputs
+artifacts/
+out/
+output/
+outputs/
+runs/
+reports/
+diagnostics/
+results/
+wf_*/
+walkforward*/
+backtest*/
+
+# Telemetry DB / SQLite
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Data (keep private/heavy)
+data/*.parquet
+data/*.csv
+data/*.zip
+data/*.feather
+data/*.h5
+data/*.hdf5
+
+# If you want to keep a small sample file in repo, whitelist it like:
+# !data/sample_*.parquet
+# !data/README.md
+
+# Models / weights / ML artifacts
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+*.npy
+*.npz
+*.keras
+
+# Logs & debug dumps (extra)
+logs/
+log/
+**/run.log
+**/*.out
+
+# Editor / OS extras (if not already)
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
